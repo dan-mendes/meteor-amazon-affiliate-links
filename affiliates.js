@@ -1,7 +1,3 @@
-// Write your package code here!
-
-// Variables exported by this module can be imported by other packages and
-// applications. See affiliates-tests.js for an example of importing.
 Affiliates = {
 	run: function(instance, affiliatePrograms) {
 		// replace or insert Amazon Affiliate ID on amazon links
@@ -28,6 +24,7 @@ Affiliates = {
 	},
 }
 
+// BACKUP affIds
 affiliateBackups = {
 	'amazon.com': {
 		identifier: "tag",
