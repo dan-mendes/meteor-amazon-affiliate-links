@@ -28,7 +28,7 @@ Insert your Amazon Associate information into your app's settings.json file:
 
 For a target template, you will be able to insert (and replace, in case another affiliate referal is already present) your Amazon associate referral to Amazon product links:
 
-    Template.exampleTemplate.onrendered(function() {
+    Template.exampleTemplate.onRendered(function() {
         Affiliates.run(this, Meteor.settings.public.affiliatePrograms);
     });  
 

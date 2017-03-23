@@ -2,8 +2,6 @@
 
 // Variables exported by this module can be imported by other packages and
 // applications. See affiliates-tests.js for an example of importing.
-export const name = 'Affiliates';
-
 Affiliates = {
 	run: function(instance, affiliatePrograms) {
 		// replace or insert Amazon Affiliate ID on amazon links
