@@ -2,14 +2,14 @@ Affiliates = {
 	run: function(instance, affiliatePrograms) {
 		// replace or insert Amazon Affiliate ID on amazon links
 	  // grab links in post with href pointing to amazon
-	  let links = instance.$("[href*='amazon.']");
+	  var links = instance.$("[href*='amazon.']");
 
 	  links.each(function() {
 	  	// grab locale of original href form: ["amazon.xyz", "xyz"]
-	    const locale = this.href.match(/amazon\.([a-z.]{2,9})(?=\/)/i);
+	    var locale = this.href.match(/amazon\.([a-z.]{2,9})(?=\/)/i);
 
 	    // set new affiliateId from settings or from backup
-	    let affiliate;
+	    var affiliate;
 	    if(affiliatePrograms[locale[0]]) {
 	    	affiliate = affiliatePrograms[locale[0]];
 	    } else {
